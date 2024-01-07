@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,6 +17,7 @@
       <nav>
         <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
         <div class="nav_links">
+          <i class="fa fa-times" onclick="toggleFunction()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -20,7 +26,209 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
+        <i class="fa fa-bars" onclick="toggleFunction()"></i>
       </nav>
+      <div class="txet-box">
+        <h1>World biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos
+          architecto eaque amet.<br />Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        </p>
+        <a class="hero-btn" href="#">Vist us to known more</a>
+      </div>
     </section>
+    <!-- End Header Section -->
+
+    <!-- Start Course Section -->
+    <section class="course_section">
+      <h1>Course We Offer</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="course_grid">
+        <div class="course_coloum">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            iure magnam perspiciatis cumque quidem nam accusantium
+            exercitationem sit.
+          </p>
+        </div>
+
+        <div class="course_coloum">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            iure magnam perspiciatis cumque quidem nam accusantium
+            exercitationem sit.
+          </p>
+        </div>
+
+        <div class="course_coloum">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            iure magnam perspiciatis cumque quidem nam accusantium
+            exercitationem sit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Course Secction -->
+
+    <!--  Start Campus Section -->
+
+    <section class="campus_section">
+      <h1>Our Global Campus</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+      <div class="campus_grid">
+        <div class="campus_coloum">
+          <img src="images/london.png" alt="" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus_coloum">
+          <img src="images/newyork.png" alt="" />
+          <div class="layer">
+            <h3>newyork</h3>
+          </div>
+        </div>
+        <div class="campus_coloum">
+          <img src="images/washington.png" alt="" />
+          <div class="layer">
+            <h3>washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  End Campus Section -->
+
+    <!--  Start Facilites Section -->
+    <section class="facilites_section">
+      <h1>Our Facilites</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <div class="facilites_grid">
+        <div class="facilites_coloum">
+          <img src="images/library.png" alt="library" />
+          <h3>World class library</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Iusto
+            suscipit blanditiis voluptate et molestias similiqu
+          </p>
+        </div>
+
+        <div class="facilites_coloum">
+          <img src="images/library.png" alt="library" />
+          <h3>World class library</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Iusto
+            suscipit blanditiis voluptate et molestias similiqu
+          </p>
+        </div>
+
+        <div class="facilites_coloum">
+          <img src="images/library.png" alt="library" />
+          <h3>World class library</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Iusto
+            suscipit blanditiis voluptate et molestias similiqu
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Facilities Section -->
+
+    <!-- Start Testimo Section -->
+
+    <section class="testimo_section">
+      <h1>What our student says</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="testimo_grid">
+        <div class="testimo_colum">
+          <div class="testimo_img">
+            <img src="images/user1.jpg" alt="user1" />
+          </div>
+          <div class="testimo_content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
+              magni totam distinctio voluptates
+            </p>
+            <h3>Yasir Hussain</h3>
+            <div class="review">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimo_colum">
+          <div class="testimo_img">
+            <img src="images/user1.jpg" alt="user1" />
+          </div>
+          <div class="testimo_content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
+              magni totam distinctio voluptates
+            </p>
+            <h3>Yasir Hussain</h3>
+            <div class="review">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimo Section -->
+
+    <!-- Start Enroll Section -->
+
+    <section class="enroll_section">
+      <h1>
+        Enroll for your various online courses <br />
+        anywhere from the world
+      </h1>
+      <a href="#" class="contact-btn">Contact us</a>
+    </section>
+    <!-- End Enroll Section -->
+
+    <!-- Start Footer Section -->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum odit,
+        dignissimos eveniet laudantium, ipsam.<br />
+        illum dolorem delectus molestias harum quaerat quos. Et, quidem iusto!
+        Aperiam nam dolores architecto repellat neque?
+      </p>
+      <div class="footer_icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>
+        <i class="fa fa-copyright"></i> Copyright 2024 by Yasir Hussain. All
+        Rights Reserved.
+      </p>
+    </section>
+
+    <!-- Script for toogle -->
+    <script>
+      const toggleFunction = () => {
+        const nav = document.querySelector(".nav_links");
+        nav.classList.toggle("show");
+      };
+    </script>
   </body>
 </html>

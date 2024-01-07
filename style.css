@@ -7,8 +7,10 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Kalnia', serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Rajdhani', sans-serif;
+  font-family: 'Poppins', sans-serif; 
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: capitalize;
+  transition: .2s ease-in-out;
 }
 
 .header{
@@ -36,7 +38,7 @@ font-family: 'Rajdhani', sans-serif;
 .nav_links ul li{
   padding: 8px 12px;
   position: relative;
-  display:inline-block;
+  display:inline-block
 }
  ul li a {
   color: #fff;
@@ -47,12 +49,378 @@ font-family: 'Rajdhani', sans-serif;
   content: " ";
   width: 0%;
   height: 2px;
+  transition: .3s ease-in-out;
   background-color: #f44336;
   display: block;
   margin: auto;
-  transition: .2s linear;
  }
 
  .nav_links ul li a:hover::after{
   width: 100%;
  }
+
+ .txet-box{
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+ }
+ .txet-box h1 {
+  font-size: 62px;
+ }
+
+ .txet-box p {
+  font-size: 15px;
+  margin: 10px 0 40px;
+ }
+
+ .hero-btn {
+  display: inline-block;
+  color:#fff;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  position: relative;
+  cursor: pointer;
+ }
+
+ .hero-btn:hover {
+  border: 1px solid #f44336 ;
+  background: #f44336;
+ }
+ .fa-bars{
+  display: none;
+ }
+ .fa-times{
+  display: none;
+ }
+
+/* Courses */
+.course_section{
+  width: 80%;
+  padding-top: 100px;
+  text-align: center;
+  margin: auto;
+}
+.course_grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.course_coloum{
+  cursor: pointer;
+  padding: 20px;
+  background: #FDF1F1;
+  text-align: center;
+  border-radius: 10px;
+}
+.course_coloum p {
+  margin-top: 20px;
+}
+.course_coloum:hover{
+  box-shadow: 0 0 20px 0  rgba(0, 0, 0, 0.2);
+}
+
+.course_section h1{
+  font-size:36px;
+  font-weight: 600;
+}
+
+.course_section > p{
+  color: #777;
+  font-size:14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+/* Campus Section */
+.campus_section{
+  width: 80%;
+  padding-top: 50px;
+  text-align: center;
+  margin: auto;
+}
+.campus_section > h1{
+  font-size:36px;
+  font-weight: 600;
+}
+
+.campus_section > p{
+  color: #777;
+  font-size:14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.campus_grid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 40px;
+}
+
+.campus_coloum{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.campus_coloum img{
+  width: 100%;
+  border-radius: 10px;
+}
+.layer{
+  background:transparent;
+  height: 100%  ;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layer h3{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.layer:hover{
+  background:rgba(226, 0, 0, 0.7);
+}
+
+/* facilites_section */
+.facilites_section{
+  width: 80%;
+  padding-top: 50px;
+  text-align: center;
+  margin: auto;
+}
+.facilites_section > h1{
+  font-size:36px;
+  font-weight: 600;
+}
+
+.facilites_section > p{
+  color: #777;
+  font-size:14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  text-align: center;
+}
+.facilites_grid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 40px;
+}
+.facilites_coloum  > h3{
+  text-align: left;
+}
+.facilites_coloum  > p{
+  text-align: left;
+}
+.facilites_coloum  h3{
+padding: 15px 0;
+}
+.facilites_coloum img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* testimo_section */
+  .testimo_section{
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .testimo_section > h1{
+    font-size:36px;
+    font-weight: 600;
+  }
+  
+  .testimo_section > p{
+    color: #777;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+  } 
+
+  .testimo_grid{
+    padding-top: 50px;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+  }
+
+  .testimo_colum{
+    display: flex;
+    flex: 1;
+    background-color:#FDF1F1;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .testimo_content{
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .testimo_content h3,p{
+    margin-bottom: 10px;
+  }
+
+  .testimo_img img{
+    width: 50px;
+    border-radius: 100%;
+  }
+
+  .review i {
+    color: #f44336;
+  }
+
+  .testimo_colum:hover{
+    box-shadow: 0 0 20px 0  rgba(0, 0, 0, 0.2);
+  }
+.testimo_colum:hover .testimo_img{
+  transform: scale(1.2) ;
+}
+.review{
+  display:inline;
+
+}
+.review:hover{
+  transform:scaleY(1.2);
+}
+
+/* enroll Section */
+.enroll_section{
+    width: 80%;
+    text-align: center;
+    margin: 150px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    border-radius: 10px; 
+  }
+
+  .enroll_section h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 30px;
+    padding: 0;
+  }
+
+.contact-btn{
+  display: inline-block;
+  color:#fff;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  position: relative;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  border: 1px solid #f44336 ;
+  background: #f44336;
+ }
+
+ /* footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4{
+  margin-bottom:25px ;
+  margin-top:20px ;
+  font-weight: 600;
+
+}
+.footer_icons .fa{
+  color: #F44366;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.footer_icons .fa:hover{
+  transform: scale(1.3);
+}
+
+
+ @media (max-width: 768px) {
+  .txet-box h1{
+    font-size: 30px;
+  }
+  .nav_links ul li{
+    display: block;
+    text-align: left;
+  }
+  .nav_links ul{
+    position:absolute;
+    top: 30%;
+    left: 30%;
+  }
+  .nav_links{
+    position:absolute;
+    right: -300px;
+    top: 0;
+    background:#f44336;
+    height: 100vh;
+    width: 200px;
+    z-index: 2;
+  }
+  .fa-times{
+    display: inline-block !important
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    padding:10px 20px;
+    transition: 0s !important;
+
+  }
+
+  .fa-bars:hover{
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: rgba(132, 129, 129, 0.5);
+  }
+  .show{
+    right: 0;
+  }
+  .course_grid{
+    display: grid;
+    grid-template-columns: 1fr; 
+ }
+ .campus_grid{
+  grid-template-columns:1fr;
+ }
+
+ .facilites_grid{
+  grid-template-columns: 1fr;  
+}
+.testimo_grid{
+  flex-direction: column;
+}
+
+}
