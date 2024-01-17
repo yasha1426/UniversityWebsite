@@ -21,13 +21,13 @@
   background-size: cover;
   position: relative;
 }
-.header nav{
+nav{
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
 }
-.header img{
+.sub_header img{
   width: 150px;
 }
 .nav_links{
@@ -51,7 +51,7 @@
   height: 2px;
   transition: .3s ease-in-out;
   background-color: #f44336;
-  display: block;
+  display: var(--afterback, block);
   margin: auto;
  }
 
@@ -344,7 +344,7 @@ padding: 15px 0;
 .footer{
   width: 100%;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .footer h4{
@@ -423,4 +423,70 @@ padding: 15px 0;
   flex-direction: column;
 }
 
+.footer{
+  width: 80%;
+  margin: auto;
+  /* padding: 30px 0; */
+}
+
+}
+
+/* About Us Pagr */
+
+.sub_header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.sub_header h1{
+  margin-top: 80px;
+}
+.about_us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about_raw{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding:30px 2px;
+}
+.about_content h1 {
+  padding-top: 0;
+}
+
+.about_content p {
+  padding:15px 0 25px;
+}
+.red-btn{
+  border: 1px solid #F44366;
+  color: #F44336;
+  background:transparent  ;
+}
+
+.red-btn:hover{
+  color: #FDF1F1;
+}
+
+.aboutus_img img{
+  width: 100%;
+}
+
+@media (max-width: 768px){
+.about_raw{
+  flex-direction: column;
+}  
+}
+
+.active{
+  border-bottom: 3px solid #beb7e9;
 }

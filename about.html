@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/UniversityWebsite/script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="sub_header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav_links">
+          <i class="fa fa-times" onclick="toggleFunction()"></i>
+          <ul>
+            <li><a href="/UniversityWebsite/index.html">HOME</a></li>
+            <li><a href="/UniversityWebsite/about.html">ABOUT</a></li>
+            <li><a href="/UniversityWebsite/course.html">COURSE</a></li>
+            <li><a href="/UniversityWebsite//blog.html">BLOG</a></li>
+            <li><a href="/UniversityWebsite/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="toggleFunction()"></i>
+      </nav>
+      <h1>about us</h1>
+    </section>
+    <!-- End Header Section -->
+
+    <!-- About content  -->
+    <section class="about_us">
+      <div class="about_raw">
+        <div class="about_content">
+          <h1>we are world largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cum.
+            Rerum sunt error voluptates ipsum. Harum temporibus vitae magnam
+            accusantium labore vero, blanditiis quibusdam, odit nulla similique
+            iusto repellat quaerat. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Animi consectetur odit esse vero? Magnam voluptas,
+            distinctio perfer.
+          </p>
+          <a class="hero-btn red-btn" href="">Explore Now</a>
+        </div>
+        <div class="aboutus_img">
+          <img src="images/about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Start Footer Section -->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum odit,
+        dignissimos eveniet laudantium, ipsam.<br />
+        illum dolorem delectus molestias harum quaerat quos. Et, quidem iusto!
+        Aperiam nam dolores architecto repellat neque?
+      </p>
+      <div class="footer_icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+      <p>
+        <i class="fa fa-copyright"></i> Copyright 2024 by Yasir Hussain. All
+        Rights Reserved.
+      </p>
+    </section>
+
+    <!-- Script for toogle -->
+    <script>
+      const toggleFunction = () => {
+        const nav = document.querySelector(".nav_links");
+        nav.classList.toggle("show");
+      };
+    </script>
+  </body>
+</html>
