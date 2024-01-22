@@ -8,3 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("scroll", function () {
+  const scrollPercentage =
+    (window.scrollY /
+      (document.documentElement.scrollHeight - window.innerHeight)) *
+    100;
+  document.querySelector(".scroll_line").style.width = `${scrollPercentage}%`;
+});

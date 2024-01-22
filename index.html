@@ -9,34 +9,49 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="/UniversityWebsite/script.js"></script>
   </head>
   <body>
     <!-- Header Section -->
+    <div class="scroll_line"></div>
     <section class="header">
       <nav>
-        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <a href="index.html"
+          ><img
+            src="images/logo.svg"
+            alt="logo"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          />
+          /></a
+        >
         <div class="nav_links">
           <i class="fa fa-times" onclick="toggleFunction()"></i>
           <ul>
-            <li><a href="/UniversityWebsite/index.html">HOME</a></li>
-            <li><a href="/UniversityWebsite/about.html">ABOUT</a></li>
-            <li><a href="/UniversityWebsite/course.html">COURSE</a></li>
-            <li><a href="/UniversityWebsite/blog.html">BLOG</a></li>
-            <li><a href="/UniversityWebsite/contact.html">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="toggleFunction()"></i>
       </nav>
-      <div class="txet-box">
-        <h1>World biggest University</h1>
-        <p>
+      <div class="txet-box" ">
+        <h1  data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">World biggest University</h1>
+        <p data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eos
           architecto eaque amet.<br />Lorem ipsum dolor sit amet consectetur
           adipisicing elit.
         </p>
-        <a class="hero-btn" href="#">Vist us to known more</a>
+        <a class="hero-btn" href="about.html" data-aos="fade-down" 
+       >Vist us to known more</a>
       </div>
     </section>
     <!-- End Header Section -->
@@ -46,7 +61,11 @@
       <h1>Course We Offer</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="course_grid">
+      <div
+        class="course_grid"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="course_coloum">
           <h3>Intermediate</h3>
           <p>
@@ -83,7 +102,12 @@
       <h1>Our Global Campus</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="campus_grid">
+      <div
+        class="campus_grid"
+        data-aos="zoom-in"
+        data-aos-easing="ease-in-sine"
+        data-aos-offset="200"
+      >
         <div class="campus_coloum">
           <img src="images/london.png" alt="" />
           <div class="layer">
@@ -114,7 +138,14 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <div class="facilites_grid">
         <div class="facilites_coloum">
-          <img src="images/library.png" alt="library" />
+          <img
+            src="images/library.png"
+            alt="library"
+            data-aos="flip-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          />
+          />
           <h3>World class library</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.Iusto
@@ -123,8 +154,14 @@
         </div>
 
         <div class="facilites_coloum">
-          <img src="images/library.png" alt="library" />
-          <h3>World class library</h3>
+          <img
+            src="images/basketball.png"
+            alt="library"
+            data-aos="flip-left"
+            data-aos-offset="300"
+            data-aos-easing="data-aos-easing"
+          />
+          <h3>Larget play ground</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.Iusto
             suscipit blanditiis voluptate et molestias similiqu
@@ -132,8 +169,14 @@
         </div>
 
         <div class="facilites_coloum">
-          <img src="images/library.png" alt="library" />
-          <h3>World class library</h3>
+          <img
+            src="images/cafeteria.png"
+            alt="library"
+            data-aos="flip-left"
+            data-aos-offset="400"
+            data-aos-easing="data-aos-easing"
+          />
+          <h3>testy and healthy food</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.Iusto
             suscipit blanditiis voluptate et molestias similiqu
@@ -149,17 +192,22 @@
     <section class="testimo_section">
       <h1>What our student says</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="testimo_grid">
+      <div
+        class="testimo_grid"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="data-aos-easing"
+      >
         <div class="testimo_colum">
           <div class="testimo_img">
-            <img src="images/user1.jpg" alt="user1" />
+            <img src="images/user2.jpg" alt="user1" />
           </div>
           <div class="testimo_content">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
               magni totam distinctio voluptates
             </p>
-            <h3>Yasir Hussain</h3>
+            <h3>ixhan Hussain</h3>
             <div class="review">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
@@ -179,7 +227,7 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores,
               magni totam distinctio voluptates
             </p>
-            <h3>Yasir Hussain</h3>
+            <h3>Zoya Hussain</h3>
             <div class="review">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
@@ -195,12 +243,17 @@
 
     <!-- Start Enroll Section -->
 
-    <section class="enroll_section">
+    <section
+      class="enroll_section"
+      data-aos="zoom-out"
+      data-aos-offset="200"
+      data-aos-easing="data-aos-easing"
+    >
       <h1>
         Enroll for your various online courses <br />
         anywhere from the world
       </h1>
-      <a href="#" class="contact-btn">Contact us</a>
+      <a href="contact.html" class="contact-btn">Contact us</a>
     </section>
     <!-- End Enroll Section -->
 
@@ -214,10 +267,18 @@
         Aperiam nam dolores architecto repellat neque?
       </p>
       <div class="footer_icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-linkedin"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa fa-instagram"></i>
+        </a>
       </div>
       <p>
         <i class="fa fa-copyright"></i> Copyright 2024 by Yasir Hussain. All
@@ -231,6 +292,11 @@
         const nav = document.querySelector(".nav_links");
         nav.classList.toggle("show");
       };
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
